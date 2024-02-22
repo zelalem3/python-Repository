@@ -4,7 +4,7 @@ from selenium.webdriver.common import keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import ElementClickInterceptedException
 
-CHROME_DRIVER_PATH = "djk"
+CHROME_DRIVER_PATH = ""
 username = "zgetnet242gmail.com"
 password = "zelalem1249"
 SIMILAR_ACCOUNT = "lionel messi"

@@ -1,0 +1,60 @@
+input
+{
+    width: 80%;
+    height: 60px;
+
+    font-size: 30px;
+
+
+
+}
+.icon {
+  cursor: pointer;
+  color: black;
+}
+
+.icon.clicked i {
+  color: yellow;
+}
+p
+{
+display: inline;
+}
+button
+{
+display: inline;
+}
+::Placeholder{
+    padding-left: 400px;
+    font-size: 40px;
+}
+h1
+{
+text-align: center;
+
+}
+.header{
+background-color: blue;
+}
+.icon{
+}
+button{
+
+
+}
+body{
+background-color:LightGray;
+}
+.create{
+background:F9F6EE;
+}
+.icon{
+margin-right:30px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+
+

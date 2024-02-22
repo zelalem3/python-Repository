@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image and Description</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      max-height: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .description {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    .description h2 {
+      font-size: 24px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .description p {
+      font-size: 16px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+<form action="/buy" method="post">
+
+
+  <div class="container">
+    <div class="image">
+      <img src="../static/img/bg-masthead.jpg" alt="Image">
+    </div>
+    <div class="description">
+      <h2>Description</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vestibulum nunc. Mauris eget justo vel quam sollicitudin posuere. Nulla facilisi.</p>
+    </div>
+  </div>
+  </form>
+</body>
+</html>

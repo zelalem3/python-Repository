@@ -1,54 +1,50 @@
-from random import randint
-# # def new(*args):
-# #     num = int(0)
-# #     for n in args:
-# #         num += n
-# #     print(num)
-# #
-# #
-# # new(4, 5, 6, 7, 8, 9, 0)
 from flask import Flask
 app = Flask(__name__)
-# if __name__ == "__main__":
-#      app.run()
-# # def bold(function):
-# #     def make_bold():
-# #
-# #         return f"<b> {function()} </b>"
-# #     return make_bold
-# # def emphasis(function):
-# #     def emphasised():
-# #         return "<em>" + function() + "</em>"
-# #     return emphasised
-# # def make_bold(function):
-# #     def bold():
-# #        return "<b>" + function() + "</b>"
-# #     return bold
-# #
-# # def make_underlined(function):
-# #     def underline():
-# #         return "<u>" + function() + "</u>"
-# #     return underline
-# #
-# # @app.route("/")
-# #
-# # @bold("/")
-# # @emphasis("/")
-# # @make_underlined("/")
-# # def home_page():
-# #     print("what is your name")
-# #
-# #
-# # @app.route("/username/<name>")
-# # def hello_world(name):
-# #     return f"hello {name}"
-# #
-# # @app.route("/")
-# # 
-# #
+from random import randint
+# def new(*args):
+#     num = int(0)
+#     for n in args:
+#         num += n
+#     print(num)
+#
+#
+# new(4, 5, 6, 7, 8, 9, 0)
+
+
+def bold(function):
+    def make_bold():
+
+        return f"<b> {function()} </b>"
+    return make_bold
+def emphasis(function):
+    def emphasised():
+        return "<em>" + function() + "</em>"
+    return emphasised
+# def make_bold(function):
+#     def bold():
+#        return "<b>" + function() + "</b>"
+#     return bold
+#
+def make_underlined(function):
+    def underline():
+        return "<u>" + function() + "</u>"
+    return underline
+
+# @bold("/")
+# @emphasis("/")
+# @make_underlined("/")
+
+#
+#
+# @app.route("/username/<name>")
+# def hello_world(name):
+#     return f"hello {name}"
+#
+# @app.route("/")
+#
 #
 
-
+@make_underlined("/")
 @app.route("/")
 def home():
     return "<h1> guess a number between 0 and 9 </h1>" \
@@ -73,4 +69,4 @@ def guess_number(guess):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, )
+    app.run(debug=True, port=8000)

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cafes</title>
+</head>
+<body>
+    <h1>List of Cafes</h1>
+    <ul>
+        {% for cafe in cafes %}
+        <li>
+            <h2>{{ cafe.name }}</h2>
+            <p>Location: {{ cafe.location }}</p>
+            <p>Seats: {{ cafe.seats }}</p>
+            <p>Has Toilet: {{ cafe.has_toilet }}</p>
+            <p>Has WiFi: {{ cafe.has_wifi }}</p>
+            <p>Has Sockets: {{ cafe.has_sockets }}</p>
+            <p>Can Take Calls: {{ cafe.can_take_calls }}</p>
+            <p>Coffee Price: {{ cafe.coffee_price }}</p>
+            <img src="{{ cafe.img_url }}" alt="Cafe Image">
+            <a href="{{ cafe.map_url }}">View Map</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
